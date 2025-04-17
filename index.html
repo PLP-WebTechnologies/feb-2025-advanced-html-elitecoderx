@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HTML5 Practice Page</title>
+</head>
+<body>
+
+  <!-- Ordered List with Roman Numerals -->
+  <h2>My Favorite Programming Languages</h2>
+  <ol type="I">
+    <li>Python</li>
+    <li>JavaScript</li>
+    <li>Java</li>
+    <li>C++</li>
+    <li>Go</li>
+  </ol>
+
+  <!-- External Image from Pexels -->
+  <h2>Inspiring Tech Image</h2>
+  <img src="https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg" alt="Technology Image" width="600" />
+
+  <!-- Contact Table -->
+  <h2>Contact List</h2>
+  <table border="1" cellpadding="8">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Address</th>
+        <th>Mobile</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Sachin Kumar</td>
+        <td>New Delhi, India</td>
+        <td>+91-9876543210</td>
+        <td>sachin@example.com</td>
+      </tr>
+      <tr>
+        <td>Priya Sharma</td>
+        <td>Mumbai, India</td>
+        <td>+91-9123456789</td>
+        <td>priya@example.com</td>
+      </tr>
+      <tr>
+        <td>Arjun Mehta</td>
+        <td>Bangalore, India</td>
+        <td>+91-9988776655</td>
+        <td>arjun@example.com</td>
+      </tr>
+      <tr>
+        <td>Neha Kapoor</td>
+        <td>Pune, India</td>
+        <td>+91-9871234567</td>
+        <td>neha@example.com</td>
+      </tr>
+      <tr>
+        <td>Ravi Verma</td>
+        <td>Hyderabad, India</td>
+        <td>+91-9001122334</td>
+        <td>ravi@example.com</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Registration Form -->
+  <h2>User Registration</h2>
+  <form action="/submit" method="POST">
+    <!-- Name Field -->
+    <label for="name">Full Name:</label><br>
+    <input type="text" id="name" name="name" placeholder="Enter your full name" required><br><br>
+
+    <!-- Email Field -->
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+
+    <!-- Password Field -->
+    <label for="password">Password:</label><br>
+    <input type="password" id="password" name="password" placeholder="Enter password" minlength="6" required><br><br>
+
+    <!-- Date of Birth Field -->
+    <label for="dob">Date of Birth:</label><br>
+    <input type="date" id="dob" name="dob" required><br><br>
+
+    <!-- Dropdown -->
+    <label for="country">Select Country:</label><br>
+    <select id="country" name="country" required>
+      <option value="">--Choose--</option>
+      <option value="india">India</option>
+      <option value="usa">USA</option>
+      <option value="uk">UK</option>
+    </select><br><br>
+
+    <!-- Radio Buttons -->
+    <p>Gender:</p>
+    <input type="radio" id="male" name="gender" value="male" required>
+    <label for="male">Male</label><br>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label><br><br>
+
+    <!-- Checkboxes -->
+    <p>Select your interests:</p>
+    <input type="checkbox" id="coding" name="interests" value="coding">
+    <label for="coding">Coding</label><br>
+    <input type="checkbox" id="reading" name="interests" value="reading">
+    <label for="reading">Reading</label><br>
+    <input type="checkbox" id="gaming" name="interests" value="gaming">
+    <label for="gaming">Gaming</label><br><br>
+
+    <!-- Submit Button -->
+    <input type="submit" value="Register">
+  </form>
+
+</body>
+</html>
